@@ -1,7 +1,7 @@
 {
-  "name": "coffee-backend",
+  "name": "catalog-backend",
   "version": "1.0.0",
-  "description": "System backend of coffee shop for learning 6802042857027",
+  "description": "System backend of catalog",
   "main": "index.js",
   "type": "module",
   "scripts": {

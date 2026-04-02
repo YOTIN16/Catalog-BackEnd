@@ -1,37 +1,30 @@
 import cors from "cors";
 import express from "express";
-import get_menu from "./routes/get_menu.js"
-import get_topping from "./routes/get_topping.js"
-import get_customer from "./routes/get_customer.js"
-import post_menu from "./routes/post_menu.js"
-import post_customer from "./routes/post_customer.js"
-import put_menu from "./routes/put_menu.js"
-import patch_menu from "./routes/patch_menu.js"
-import delete_menu from "./routes/delete_menu.js"
-import get_customer_by_phone from "./routes/get_customer_by_phone.js"
-import post_order from "./routes/post_order.js"
-import crud_menu_nosql  from "./routes/crud_menu_nosql.js"
-import post_order_nosql  from "./routes/post_order_noSQL.js"
-import get_report_nosql  from "./routes/get_report_nosql.js"
-
+import get_new_customer  from "./routes/getCustomer.js"
+import post_new_customer  from "./routes/postCustomer.js"
+import patch_reward  from "./routes/patchCustomer.js"
+import post_reward  from "./routes/postReward.js"
+import getCustomerDashboard from "./routes/getCustomerDashboard.js";
+import putReward from "./routes/putReward.js";
+import patchRedeem from "./routes/patchRedeem.js";
+import deleteReward from "./routes/deleteReward.js";
+import Get_Phone from "./routes/Search_Phone.js";
+import Put_Customer from "./routes/put_customer.js";
 
 const app =express();
 app.use(cors());
 app.use(express.json());
 
-app.use(crud_menu_nosql);
-app.use(get_menu);
-app.use(get_customer);
-app.use(post_menu);
-app.use(put_menu);
-app.use(patch_menu);
-app.use(delete_menu);
-app.use(get_customer_by_phone);
-app.use(get_topping);
-app.use(post_customer);
-app.use(post_order);
-app.use(post_order_nosql);
-app.use(get_report_nosql);
+app.use(get_new_customer);
+app.use(post_new_customer);
+app.use(patch_reward);
+app.use(post_reward);
+app.use(getCustomerDashboard);
+app.use(putReward);
+app.use(patchRedeem);
+app.use(deleteReward);
+app.use(Put_Customer);
+app.use(Get_Phone);
 
 
 app.listen(3000,()=>{
