@@ -1,3 +1,3 @@
-# coffee-backend
-System backend of coffee shop for learning
+# catalog-backend
+System backend of catalog for learning
 6802042857027
