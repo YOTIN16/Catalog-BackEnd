@@ -2,10 +2,10 @@ import { createConnection } from "mysql2";
 
 const db = createConnection({
     host: "localhost",
-    port: 3307,
+    port: 3308,
     user: "root",
     password: "",
-    database: "Add_Point"
+    database: "Market"
 })
 
 db.connect((err)=>{
